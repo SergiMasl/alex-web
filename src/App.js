@@ -3,54 +3,98 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./Navbar.scss";
 import "./Footer.sass";
 import Logo1 from "./styles/lobby wall paper_lotus flower.png";
-
+import Logo2 from "./styles/BLACK LOTUS_small light box sign Transp.png";
+import Shantyana from "./styles/lobby wall paper_lotus flower.png";
+import BarqLin from "./styles/barq/Line.jpg";
+import BarqWaht from "./styles/barq/WhatsApp.jpg";
+import BarqInst from "./styles/barq/IG.jpg";
+import BarqWech from "./styles/barq/Wechat.jpg";
 const Home = () => (
   <div className="home">
-    <h1 className="text-4xl font-bold text-gray-800">
-      Welcome to Massage Envy
-    </h1>
-    <p className="text-lg text-gray-600 mt-4">
-      Experience relaxation like never before.
-    </p>
-    <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">
-      Book Now
-    </button>
-
+    <div className="home-logo-wrap">
+      <img src={Logo2} alt="React Logo" className="home-logo-big" />
+    </div>
+    <div className="home-text-wrap">
+      {/* <div className="home-sub-text">
+        <p className="home-text-gold">1111111</p>
+        <p className="home-text-gold">fdsds</p>
+        <p className="home-text-gold">fsdf23fdsf</p>
+      </div>
+      <div className="home-sub-text-design"></div>
+      <div className="home-sub-text">
+        <p className="home-text-gold">2222</p>
+        <p className="home-text-gold">fdsf32</p>
+        <p className="home-text-gold">fsdfvdfvdfvfdswe</p>
+      </div> */}
+    </div>
+    <About />
     <Footer />
   </div>
 );
 
-// const About = () => (
-//   <div className="min-h-screen bg-gray-100 text-center p-10">
-//     <h1 className="text-4xl font-bold text-gray-800">About Us</h1>
-//     <p className="text-lg text-gray-600 mt-4">
-//       Discover our mission and values.
-//     </p>
-//   </div>
-// );
+const About = () => (
+  <div className="about-servis-wrap">
+    <h1 className="about-servises-title">Our Services</h1>
+    <div className="about-servises">
+      <div className="about-ser">
+        <img src={Shantyana} alt="React Logo" className="about-logo-big" />
+        <p className="about-ser-text">Jacuzzi Room </p>
+      </div>
+      <div className="about-ser">
+        <img src={Shantyana} alt="React Logo" className="about-logo-big" />
+        <p className="about-ser-text">2Girls</p>
+      </div>
+      <div className="about-ser">
+        <img src={Shantyana} alt="React Logo" className="about-logo-big" />
+        <p className="about-ser-text">Showroom</p>
+      </div>
+      <div className="about-ser">
+        <img src={Shantyana} alt="React Logo" className="about-logo-big" />
+        <p className="about-ser-text">NURU</p>
+      </div>
+    </div>
+  </div>
+);
 
 const Footer = () => (
   <div className="footer">
-    <h1 className="footer-title"> Black Lotus SPA</h1>
     <div className="footer-sub">
       <div className="f-s-left">
         <h2 className="footer-sub-title">Contacts</h2>
-        <p className="footer-text">2154 Royal Ln. Dallas, TX. 75229</p>
+        <h3 className="footer-sub-title gold">
+          5 minutes walk from Phrom Phong BTS station exit 5.
+        </h3>
 
-        <div className="footer-contact">
-          <a href="tel:+1234567890" className="contact">
-            📞 +1 234 567 890
-          </a>
-          <a href="mailto:info@massageenvy.com" className="contact">
-            ✉️ info@massageenvy.com
-          </a>
-        </div>
+        <div className="footer-contact"></div>
       </div>
       <div className="f-s-rigt">
-        <h2 className="footer-sub-title">Hours</h2>
-        <div className="">
-          <h3>SPA & SAUNA</h3>
-          <p className="footer-text">8AM - 12AM</p>
+        <h2 className="footer-sub-title">We are open every day</h2>
+        <h3 className="footer-sub-title gold">From 11:00 to 00:00</h3>
+      </div>
+    </div>
+
+    <div className="footer-barq-wrap">
+      <p className="footer-extra-text">
+        Follow us on social media for the latest pictures and promotions!
+      </p>
+      <div className="footer-barq-icons">
+        <div className="about-servises">
+          <div className="about-ser">
+            <img src={BarqLin} alt="React Logo" className="about-logo-big " />
+            <p className="about-ser-text">LINE </p>
+          </div>
+          <div className="about-ser">
+            <img src={BarqWech} alt="React Logo" className="about-logo-big" />
+            <p className="about-ser-text">WECHAT</p>
+          </div>
+          <div className="about-ser">
+            <img src={BarqInst} alt="React Logo" className="about-logo-big" />
+            <p className="about-ser-text">INSTAGRAM</p>
+          </div>
+          <div className="about-ser">
+            <img src={BarqWaht} alt="React Logo" className="about-logo-big" />
+            <p className="about-ser-text">WHATSAPP</p>
+          </div>
         </div>
       </div>
     </div>
@@ -77,12 +121,15 @@ const Navbar = () => {
         <img src={Logo1} alt="React Logo" className="nav-logo-big" />
       </div>
       <div className="navbar-right">
-        <a href="tel:+1234567890" className="contact">
+        <Link to="#" className="nav-book-btm">
+          Book now
+        </Link>
+        {/* <a href="tel:+1234567890" className="contact">
           📞 +1 234 567 890
         </a>
         <a href="mailto:info@massageenvy.com" className="contact">
           ✉️ info@massageenvy.com
-        </a>
+        </a> */}
       </div>
       {/* <div className="burger-menu" onClick={toggleMenu}>
         ☰
@@ -116,6 +163,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/alex-web" element={<Home />} />
       </Routes>
     </Router>
   );

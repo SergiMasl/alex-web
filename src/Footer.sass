@@ -5,12 +5,75 @@
     justify-content: center
     align-items: center
 
+    .home-logo-wrap
+        width: 400px
+        margin-top: 2em
+
+        .home-logo-big
+            width: 100%
+    .home-text-wrap
+        margin: 0
+        margin-bottom: 2em
+        display: flex
+        justify-content: space-between
+        width: 300px
+        .home-sub-text-design
+            width: 1px
+            background: #e7b46d
+            height: auto
+        .home-sub-text
+            width: 49%
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            .home-text-gold
+                color: #e7b46d
+                font-size: 1em
+
+.about-servis-wrap
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 1em
+    .about-servises-title
+        margin: 0
+        color: #e7b46d
+    .about-servises
+        display: grid
+        grid-template-columns: repeat(4, 1fr) // Default: 4 columns
+        justify-content: center
+        align-items: center
+        gap: 2em
+
+        .about-ser
+            border-radius: 25px
+
+        .about-logo-big
+            width: 100%
+            max-width: 300px
+            border-radius: 15px
+        @media (max-width: 1024px)
+            grid-template-columns: repeat(2, 1fr) // 2 columns for medium screens
+
+        @media (max-width: 600px)
+            grid-template-columns: repeat(1, 1fr) // 1 column for small screens
+        .about-ser-text
+            margin: 0
+            text-align: center
+            color: #e7b46d
+            font-size: 1.3em
+            font-weight: bold
 .footer
     display: flex
     flex-direction: column
-    width: 600px
-    justify-content: center
+    width: 80%
+    justify-content: space-between
+    align-items: CENTER
     margin-top: 100px
+    margin-bottom: 2em
     @media (max-width: 768px)
         width: 400px
     @media (max-width: 450px)
@@ -20,13 +83,24 @@
         text-align: center
 
 .footer-sub
+    width: 100%
     display: flex
     flex-direction: row
     justify-content: space-between
+    text-align: center
+    align-items: start
+    @media (max-width: 780px)
+        justify-content: center
+        align-items: center
+        flex-direction: column
     @media (max-width: 450px)
         padding: 0 20px
         flex-direction: column
         align-items: center
+    .f-s-rigt, .f-s-left
+        width: 48%
+        @media (max-width: 780px)
+            width: 100%
 
     .footer-title
         color: #323232
@@ -37,8 +111,7 @@
         letter-spacing: 0.05em
 
     .footer-sub-title
-        font-weight: 200
-
+        font-weight: bold
         color: rgb(72, 184, 210)
         font-family: inherit
         text-transform: uppercase
@@ -59,3 +132,54 @@
             font-size: 16px
             font-weight: 500
             color: #323232
+    .gold
+        color: #e7b46d
+.footer-barq-wrap
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    .footer-extra-text
+        font-weight: bold
+        font-size: 1.4em
+        color: #e7b46d
+
+    .about-servis-wrap
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        gap: 1em
+    .about-servises-title
+        margin: 0
+        color: #e7b46d
+    .about-servises
+        display: grid
+        grid-template-columns: repeat(4, 1fr) // Default: 4 columns
+        justify-content: center
+        align-items: center
+        gap: 2em
+
+        .about-ser
+            border-radius: 25px
+            width: 150px
+
+        .about-logo-big
+
+            width: 100px
+            max-width: 100px
+            border-radius: 5px
+        @media (max-width: 1024px)
+
+            grid-template-columns: repeat(2, 1fr) // 2 columns for medium screens
+
+        @media (max-width: 600px)
+            grid-template-columns: repeat(1, 1fr) // 1 column for small screens
+        .about-ser-text
+            margin: 0
+            text-align: center
+            color: #e7b46d
+            font-size: 1.3em
+            font-weight: bold
