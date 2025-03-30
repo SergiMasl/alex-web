@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/alex-web/static/css/main.3d9037ea.css",
+    "main.js": "/alex-web/static/js/main.31fd9464.js",
+    "static/media/lobby wall paper_lotus flower.png": "/alex-web/static/media/lobby wall paper_lotus flower.742855c645dcb52886e8.png",
+    "index.html": "/alex-web/index.html",
+    "main.3d9037ea.css.map": "/alex-web/static/css/main.3d9037ea.css.map",
+    "main.31fd9464.js.map": "/alex-web/static/js/main.31fd9464.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d9037ea.css",
+    "static/js/main.31fd9464.js"
+  ]
+}
