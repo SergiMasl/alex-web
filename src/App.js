@@ -161,10 +161,11 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Routes>
+      <Home />
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/alex-web" element={<Home />} />
-      </Routes>
+      </Routes> */}
     </Router>
   );
 };
