@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alex-web/static/css/main.5ccbcca8.css",
-    "main.js": "/alex-web/static/js/main.e6ec2429.js",
+    "main.js": "/alex-web/static/js/main.8405e58d.js",
     "static/media/lobby wall paper_lotus flower.png": "/alex-web/static/media/lobby wall paper_lotus flower.742855c645dcb52886e8.png",
     "static/media/BLACK LOTUS_small light box sign Transp.png": "/alex-web/static/media/BLACK LOTUS_small light box sign Transp.0594108d6f139526dda6.png",
     "static/media/Wechat.jpg": "/alex-web/static/media/Wechat.fdd7cf38d126713c4c3b.jpg",
@@ -10,10 +10,10 @@
     "static/media/Line.jpg": "/alex-web/static/media/Line.2a8626b52ffe3a4b6362.jpg",
     "index.html": "/alex-web/index.html",
     "main.5ccbcca8.css.map": "/alex-web/static/css/main.5ccbcca8.css.map",
-    "main.e6ec2429.js.map": "/alex-web/static/js/main.e6ec2429.js.map"
+    "main.8405e58d.js.map": "/alex-web/static/js/main.8405e58d.js.map"
   },
   "entrypoints": [
     "static/css/main.5ccbcca8.css",
-    "static/js/main.e6ec2429.js"
+    "static/js/main.8405e58d.js"
   ]
 }
