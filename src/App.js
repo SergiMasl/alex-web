@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./Navbar.scss";
 import "./Footer.sass";
 import Logo1 from "./styles/lobby wall paper_lotus flower.png";
@@ -121,9 +120,9 @@ const Navbar = () => {
         <img src={Logo1} alt="React Logo" className="nav-logo-big" />
       </div>
       <div className="navbar-right">
-        <Link to="#" className="nav-book-btm">
+        <a to="#" className="nav-book-btm">
           Book now
-        </Link>
+        </a>
         {/* <a href="tel:+1234567890" className="contact">
           📞 +1 234 567 890
         </a>
@@ -159,14 +158,11 @@ const Navbar = () => {
 
 const App = () => {
   return (
-    <Router>
+    <>
+      {" "}
       <Navbar />
       <Home />
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/alex-web" element={<Home />} />
-      </Routes> */}
-    </Router>
+    </>
   );
 };
 
