@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  @media (max-width: 768px) {
+    padding: 15px 20px;
+  }
+
+  .navbar-left {
+    display: block;
+    width: 80px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .nav-logo-big {
+      width:100%
+    }
+
+
+  }
+
+  .navbar-right {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .contact {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+
+  .burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+
+    &.open {
+      right: 0;
+    }
+
+    .close-menu {
+      align-self: flex-end;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .language-selector {
+      margin-top: 20px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        border-color: #007bff;
+      }
+    }
+  }
+}
+
