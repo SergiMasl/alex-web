@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import "./Footer.sass";
 import Logo1 from "./styles/lobby wall paper_lotus flower.png";
-import Logo2 from "./styles/BLACK LOTUS_small light box sign Transp.png";
+import Logo2 from "./styles/BLACK LOTUS_small light box sign Transp XS.png";
 import Shantyana from "./styles/lobby wall paper_lotus flower.png";
 import BarqLin from "./styles/barq/Line.png";
 import BarqWaht from "./styles/barq/WhatsApp.jpg";
 import BarqInst from "./styles/barq/IG.jpg";
 import BarqWech from "./styles/barq/Wechat.jpg";
+import MapImg from "./styles/Map.png";
 const Home = () => (
   <div className="home">
     <div className="home-logo-wrap">
@@ -57,18 +58,23 @@ const About = () => (
 
 const Footer = () => (
   <div className="footer">
+    <div className="contact-wrap">
+      <h2>Location and Contact</h2>
+    </div>
     <div className="footer-sub">
       <div className="f-s-left">
-        <h2 className="footer-sub-title">Contacts</h2>
-        <h3 className="footer-sub-title gold">
-          5 minutes walk from Phrom Phong BTS station exit 5.
-        </h3>
-
-        <div className="footer-contact"></div>
+        <img src={MapImg} alt="React Logo" className="contact-map" />
       </div>
       <div className="f-s-rigt">
         <h2 className="footer-sub-title">We are open every day</h2>
         <h3 className="footer-sub-title gold">From 11:00 to 00:00</h3>
+        <h2 className="footer-sub-title">Location</h2>
+        <h3 className="footer-sub-title gold">
+          5 minutes walk from Phrom Phong BTS station exit 5.
+        </h3>
+        <h3 className="footer-sub-title gold">
+          25 5 Sukhumvit Rd, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand
+        </h3>
       </div>
     </div>
 
@@ -82,25 +88,53 @@ const Footer = () => (
             <div className="about-logo-wrap">
               <img src={BarqLin} alt="React Logo" className="about-logo-big " />
             </div>
-            <p className="about-ser-text">LINE </p>
+            <a
+              className="about-ser-text"
+              href="https://line.me/ti/p/TnRcvDjKSq"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LINE
+            </a>
           </div>
           <div className="about-ser">
             <div className="about-logo-wrap">
               <img src={BarqWech} alt="React Logo" className="about-logo-big" />
             </div>
-            <p className="about-ser-text">WECHAT</p>
+            <a
+              className="about-ser-text"
+              href="https://u.wechat.com/kA-jpsAkJoZy5i1Sf--0tg0?s=2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WECHAT
+            </a>
           </div>
           <div className="about-ser">
             <div className="about-logo-wrap">
               <img src={BarqInst} alt="React Logo" className="about-logo-big" />
             </div>
-            <p className="about-ser-text">INSTAGRAM</p>
+            <a
+              className="about-ser-text"
+              href="https://www.instagram.com/blacklotusbkk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              INSTAGRAM
+            </a>
           </div>
           <div className="about-ser">
             <div className="about-logo-wrap">
               <img src={BarqWaht} alt="React Logo" className="about-logo-big" />
             </div>
-            <p className="about-ser-text">WHATSAPP</p>
+            <a
+              className="about-ser-text"
+              href="https://wa.me/qr/UVEYWWCD6SIND1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WHATSAPP
+            </a>
           </div>
         </div>
       </div>
