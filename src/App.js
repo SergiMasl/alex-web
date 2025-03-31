@@ -4,7 +4,7 @@ import "./Footer.sass";
 import Logo1 from "./styles/lobby wall paper_lotus flower.png";
 import Logo2 from "./styles/BLACK LOTUS_small light box sign Transp.png";
 import Shantyana from "./styles/lobby wall paper_lotus flower.png";
-import BarqLin from "./styles/barq/Line.jpg";
+import BarqLin from "./styles/barq/Line.png";
 import BarqWaht from "./styles/barq/WhatsApp.jpg";
 import BarqInst from "./styles/barq/IG.jpg";
 import BarqWech from "./styles/barq/Wechat.jpg";
@@ -79,19 +79,27 @@ const Footer = () => (
       <div className="footer-barq-icons">
         <div className="about-servises">
           <div className="about-ser">
-            <img src={BarqLin} alt="React Logo" className="about-logo-big " />
+            <div className="about-logo-wrap">
+              <img src={BarqLin} alt="React Logo" className="about-logo-big " />
+            </div>
             <p className="about-ser-text">LINE </p>
           </div>
           <div className="about-ser">
-            <img src={BarqWech} alt="React Logo" className="about-logo-big" />
+            <div className="about-logo-wrap">
+              <img src={BarqWech} alt="React Logo" className="about-logo-big" />
+            </div>
             <p className="about-ser-text">WECHAT</p>
           </div>
           <div className="about-ser">
-            <img src={BarqInst} alt="React Logo" className="about-logo-big" />
+            <div className="about-logo-wrap">
+              <img src={BarqInst} alt="React Logo" className="about-logo-big" />
+            </div>
             <p className="about-ser-text">INSTAGRAM</p>
           </div>
           <div className="about-ser">
-            <img src={BarqWaht} alt="React Logo" className="about-logo-big" />
+            <div className="about-logo-wrap">
+              <img src={BarqWaht} alt="React Logo" className="about-logo-big" />
+            </div>
             <p className="about-ser-text">WHATSAPP</p>
           </div>
         </div>
