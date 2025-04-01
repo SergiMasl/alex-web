@@ -46,7 +46,7 @@ const About = () => (
       </div>
       <div className="about-ser">
         <img src={Shantyana} alt="React Logo" className="about-logo-big" />
-        <p className="about-ser-text">Showroom</p>
+        <p className="about-ser-text">Shower Room</p>
       </div>
       <div className="about-ser">
         <img src={Shantyana} alt="React Logo" className="about-logo-big" />
@@ -79,9 +79,7 @@ const Footer = () => (
     </div>
 
     <div className="footer-barq-wrap">
-      <p className="footer-extra-text">
-        Follow us on social media for the latest pictures and promotions!
-      </p>
+      <p className="footer-extra-text">Book Now!</p>
       <div className="footer-barq-icons">
         <div className="about-servises">
           <div className="about-ser">
@@ -112,19 +110,6 @@ const Footer = () => (
           </div>
           <div className="about-ser">
             <div className="about-logo-wrap">
-              <img src={BarqInst} alt="React Logo" className="about-logo-big" />
-            </div>
-            <a
-              className="about-ser-text"
-              href="https://www.instagram.com/blacklotusbkk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              INSTAGRAM
-            </a>
-          </div>
-          <div className="about-ser">
-            <div className="about-logo-wrap">
               <img src={BarqWaht} alt="React Logo" className="about-logo-big" />
             </div>
             <a
@@ -134,6 +119,28 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               WHATSAPP
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="footer-barq-wrap">
+      <p className="footer-extra-text">
+        Follow us on social media for the latest pictures and promotions!
+      </p>
+      <div className="footer-barq-icons footer-barq-icons">
+        <div className="about-servises about-servises2">
+          <div className="about-ser">
+            <div className="about-logo-wrap">
+              <img src={BarqInst} alt="React Logo" className="about-logo-big" />
+            </div>
+            <a
+              className="about-ser-text"
+              href="https://www.instagram.com/blacklotusbkk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              INSTAGRAM
             </a>
           </div>
         </div>
@@ -162,9 +169,12 @@ const Navbar = () => {
         <img src={Logo1} alt="React Logo" className="nav-logo-big" />
       </div>
       <div className="navbar-right">
-        <a to="#" className="nav-book-btm">
+        {/* <a to="#" className="nav-book-btm">
           Book now
-        </a>
+        </a> */}
+        <p className="temp-annons">
+          Welcome offer: 300฿ discount on your first booking!
+        </p>
         {/* <a href="tel:+1234567890" className="contact">
           📞 +1 234 567 890
         </a>

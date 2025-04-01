@@ -92,3 +92,13 @@
   }
 }
 
+.temp-annons {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #e7b46d;
+  text-align: center;
+  @media (max-width: 850px){
+    font-size: 1em;
+  }
+
+}
