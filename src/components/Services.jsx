@@ -1,5 +1,5 @@
 import React from "react";
-import BarqLin from "../styles/barq/Line.png";
+import BarqLin from "../styles/barq/Line.jpg";
 import BarqWaht from "../styles/barq/WhatsApp.jpg";
 import BarqWech from "../styles/barq/Wechat.jpg";
 

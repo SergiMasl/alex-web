@@ -1,7 +1,5 @@
-import BarqLin from "../styles/barq/Line.png";
-import BarqWaht from "../styles/barq/WhatsApp.jpg";
 import BarqInst from "../styles/barq/IG.jpg";
-import BarqWech from "../styles/barq/Wechat.jpg";
+import Tick from "../styles/barq/TikTok.jpg";
 import MapImg from "../styles/Map.png";
 
 const Contact = () => (
@@ -21,9 +19,15 @@ const Contact = () => (
           <h3 className="footer-sub-title gold">
             5 minutes walk from Phrom Phong BTS station exit 5.
           </h3>
-          <h3 className="footer-sub-title gold">
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=25+5+Sukhumvit+Rd,+Khlong+Tan,+Khlong+Toei,+Bangkok+10110,+Thailand"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-sub-title gold"
+          >
             25 5 Sukhumvit Rd, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand
-          </h3>
+          </a>
         </div>
       </div>
 
@@ -48,6 +52,19 @@ const Contact = () => (
                 rel="noopener noreferrer"
               >
                 INSTAGRAM
+              </a>
+            </div>
+            <div className="about-ser">
+              <div className="about-logo-wrap">
+                <img src={Tick} alt="React Logo" className="about-logo-big" />
+              </div>
+              <a
+                className="about-ser-text"
+                href="https://vt.tiktok.com/ZSrMFyBAV/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TIKTOK
               </a>
             </div>
           </div>
