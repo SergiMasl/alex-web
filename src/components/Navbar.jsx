@@ -33,7 +33,7 @@ const Navbar = () => {
             Contacts
           </Link>
           <Link to="/services" className="nav-book-btm">
-            Services
+            Book Now!
           </Link>
 
           {/* <a href="tel:+1234567890" className="contact">
