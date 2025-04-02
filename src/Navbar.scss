@@ -1,94 +1,121 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
+.navbar-container {
+  position: fixed;
+  width: 100%;
   background: linear-gradient(to bottom, #7b5b87 0%, #33263a 100%);
-  box-shadow: 0px 5px 14px 2px rgb(0 0 0 / 34%);
-  
-
-  .navbar-left {
-    display: block;
-    width: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: relative;
+ 
     
-    .nav-logo-big {
-      width:100%
+
+    .navbar-left {
+      display: block;
+      width: 300px;
+      @media (max-width: 1200px) {
+        width: 150px;
+      }
+      @media (max-width: 1000px) {
+        width: 100px;
+      }
+     
+      .nav-logo-big {
+        width: 80px
+      }
+
     }
 
-
-  }
-
-  .navbar-right {
-    display: flex;
-    gap: 20px;
-
-    .nav-book-btm {
-      width: 100%;
-      justify-content: space-between;
+    .navbar-right {
+      display: flex;
+      gap: 20px;
       width: 300px;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid;
-      padding: 10px;
-      text-align: center;
-      border-radius: 25px;
-      background: linear-gradient(to top, #7b5b87 0%, #33263a 100%);
-      
+      @media (max-width: 1000px) {
+        width: 300px;
+      }
+      @media (max-width: 720px) {
+        width: 300px;
+      }
+   
 
-      &:hover {
-        color: #4893e3;
+      .nav-book-btm {
+        width: 100%;
+        justify-content: space-between;
+        width: 300px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid;
+        padding: 10px;
+        text-align: center;
+        border-radius: 25px;
+        background: linear-gradient(to top, #7b5b87 0%, #33263a 100%);
+        
+
+        &:hover {
+          color: #4893e3;
+        }
       }
     }
-  }
 
 
-  .burger-menu {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    transition: right 0.3s ease-in-out;
-
-    &.open {
-      right: 0;
-    }
-
-    .close-menu {
-      align-self: flex-end;
-      background: none;
-      border: none;
+    .burger-menu {
+      display: none;
       font-size: 24px;
       cursor: pointer;
     }
 
-    .language-selector {
-      margin-top: 20px;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-      font-size: 16px;
-      cursor: pointer;
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 250px;
+      height: 100vh;
+      background-color: #fff;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      transition: right 0.3s ease-in-out;
 
-      &:hover {
-        border-color: #007bff;
+      &.open {
+        right: 0;
+      }
+
+      .close-menu {
+        align-self: flex-end;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .language-selector {
+        margin-top: 20px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          border-color: #007bff;
+        }
       }
     }
+  }
+
+
+.navbar-center {
+  display: blox;
+  @media (max-width: 961px){
+    display: none;
   }
 }
 
@@ -97,8 +124,25 @@
   font-size: 1.4em;
   color: #e7b46d;
   text-align: center;
+  margin: 0;
+  @media (max-width: 1200px){
+    font-size: 1.2em;
+  }
   @media (max-width: 850px){
     font-size: 1em;
   }
-
+}
+.promo-mini {
+  display: none;
+  @media (max-width: 960px){
+    display: block;
+    padding: 8px;
+  }
+  .temp-annons-mini{
+    font-weight: bold;
+  font-size: 1em;
+  color: #e7b46d;
+  text-align: center;
+  margin: 0;
+  }
 }
