@@ -1,7 +1,9 @@
 import Logo1 from "../styles/lobby wall paper_lotus flower.png";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import Promo from "./Promo";
 
 const Navbar = () => {
+  const [showBlockA, setShowBlockA] = useState(true);
   // const [menuOpen, setMenuOpen] = useState(false);
   // const [language, setLanguage] = useState("English");
 
@@ -17,24 +19,21 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
+      <Promo setShowBlockA={setShowBlockA} showBlockA={showBlockA} />
       <nav className="navbar">
         <div className="navbar-left">
-          <Link to="/">
+          <a href="#home">
             <img src={Logo1} alt="React Logo" className="nav-logo-big" />
-          </Link>
+          </a>
         </div>
-        <div className="navbar-center">
-          <p className="temp-annons">
-            Welcome offer: 300฿ discount on your first booking!
-          </p>
-        </div>
+
         <div className="navbar-right">
-          <Link to="/contact" className="nav-book-btm">
+          <a href="#contacts" className="nav-book-btm">
             Contacts
-          </Link>
-          <Link to="/services" className="nav-book-btm">
+          </a>
+          <a href="#services" className="nav-book-btm">
             Book Now!
-          </Link>
+          </a>
 
           {/* <a href="tel:+1234567890" className="contact">
           📞 +1 234 567 890
@@ -66,11 +65,6 @@ const Navbar = () => {
         </select>
       </div> */}
       </nav>
-      <div className="promo-mini">
-        <p className="temp-annons-mini">
-          Welcome offer: 300฿ discount on your first booking!
-        </p>
-      </div>
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
+import Promo from "./components/Promo";
 
 import "./Navbar.scss";
 import "./Footer.sass";
@@ -11,7 +11,7 @@ import Logo2 from "./styles/BLACK LOTUS_small light box sign Transp XS.png";
 import Shantyana from "./styles/lobby wall paper_lotus flower.png";
 
 const Home = () => (
-  <div className="home">
+  <div className="home" id="home">
     <div className="home-logo-wrap">
       <img src={Logo2} alt="React Logo" className="home-logo-big" />
     </div>
@@ -56,23 +56,25 @@ const About = () => (
   </div>
 );
 
-const NoPage = () => {
-  return <></>;
-};
+// const NoPage = () => {
+//   return <></>;
+// };
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/alex-web" element={<Home />} />
+      <Home />
+      <Services />
+      <Contact />
+    </>
 
-        <Route path="contact" element={<Contact />} />
-        <Route path="services" element={<Services />} />
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-    </BrowserRouter>
+    // <Route path="/" element={<Home />} />
+    // <Route path="/alex-web" element={<Home />} />
+
+    // <Route path="contact" element={<Contact />} />
+    // <Route path="services" element={<Services />} />
+    // <Route path="*" element={<NoPage />} />
   );
 };
 

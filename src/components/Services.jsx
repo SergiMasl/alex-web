@@ -5,7 +5,7 @@ import BarqWech from "../styles/barq/Wechat.jpg";
 
 export default function Services() {
   const About = () => (
-    <div className="about-servis-wrap margin-topp">
+    <div className="about-servis-wrap margin-topp" id="services">
       <div className="footer-barq-wrap">
         <p className="footer-extra-text">Book Now!</p>
         <div className="footer-barq-icons">

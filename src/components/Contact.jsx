@@ -3,7 +3,7 @@ import Tick from "../styles/barq/TikTok.jpg";
 import MapImg from "../styles/Map.png";
 
 const Contact = () => (
-  <div className="container">
+  <div className="container" id="contacts">
     <div className="footer">
       <div className="contact-wrap">
         <h2>Location and Contact</h2>

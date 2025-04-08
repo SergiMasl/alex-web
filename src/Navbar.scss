@@ -132,17 +132,3 @@
     font-size: 1em;
   }
 }
-.promo-mini {
-  display: none;
-  @media (max-width: 960px){
-    display: block;
-    padding: 8px;
-  }
-  .temp-annons-mini{
-    font-weight: bold;
-  font-size: 1em;
-  color: #e7b46d;
-  text-align: center;
-  margin: 0;
-  }
-}
